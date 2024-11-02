@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header section*/
+header {
+  height: 400px;
+  padding-top: 30px;
+  background-image: url("./assets/goodmeal.jpg");
+  background-color: #555555;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  width: 50%;
+  width: clamp(350px, 50%, 600px);
+  margin: auto;
+  position: relative;
+  z-index: 999;
+}
+header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  /* z-index: -1; */
+  width: 100%;
+  height: 100%;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: calc(16px + 1vw);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+nav div {
+  cursor: pointer;
+}
+/*home page*/
+main {
+  background-color: #222222;
+  padding: 30px 10px;
+  display: grid;
+  justify-content: center;
+}
+main .menusection {
+  max-width: 1000px;
+  /* width: 1000px; */
+}
+.menusection .header {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  margin: auto;
+}
+.menusection .menu,
+.price {
+  color: yellow;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.menulist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+.menuitem {
+  display: grid;
+  align-items: center;
+  /* width: 800px; */
+}
+.menuitem .image {
+  width: 300px;
+}
+.image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.menuitem .desc {
+  background-color: #444444;
+  color: #fff;
+  height: 100px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.desc .title {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+/* .title + p {
+   width: 55ch; 
+} */
+.menulist > div {
+  /* border: 1px solid red; */
+  display: flex;
+}
+section {
+  padding: 30px 10px;
+  display: grid;
+  justify-content: center;
+  background-color: #555555;
+}
+section .testimonials {
+  /* height: 400px; */
+  max-width: 1000px;
+  /* border: 1px solid red; */
+}
+.testimonials .testheader {
+  max-width: 400px;
+}
+.test_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+.testheader {
+  color: #fff;
+}
+.testheader p {
+  padding: 10px 0;
+}
+.testheader p:nth-child(1) {
+  color: yellow;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.testimony {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.profile .image img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.testimony .text {
+  padding: 10px 0;
+  color: #000;
+}
+.testimony strong {
+  color: orange;
+}
+.testimony .qoute {
+  color: orange;
+  font-size: 2rem;
+}
+.desc span {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.desc span + p {
+  color: #222222;
+  font-size: 0.7rem;
+}
+footer {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #222222;
+  color: #fff;
+}
+/*menu page */
+.dishes_item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.dishes .image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  display: block;
+}
+article {
+  background-color: #333333;
+  /* background-color: #fff; */
+  padding: 30px;
+}
+.dish_wrapper .dish_section {
+  max-width: 1000px;
+  margin: auto;
+}
+.dishes_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* justify-content: center; */
+  /* grid-template-columns: 300px 300px 300px; */
+  gap: 15px;
+}
+
+.dishes .desc {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+.dishes .desc .title {
+  font-weight: bold;
+}
+.dishes .desc p {
+  padding: 10px 0;
+  color: #444444;
+}
+.dishes .desc .price {
+  color: red;
+}
+/*contact page*/
+.form_container {
+  background-color: #444444;
+  padding: 30px 10px;
+}
+.form h2 {
+  color: #fff;
+  font-weight: bold;
+}
+.form p {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.form {
+  /* border: 1px solid red; */
+  max-width: 600px;
+  margin: auto;
+}
+form {
+  margin-top: 15px;
+}
+input {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 2px;
+  width: 100%;
+  outline: none;
+}
+label {
+  padding: 10px 0;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+textarea {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  outline: none;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: transparent;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  font-size: 1.5em;
+}
